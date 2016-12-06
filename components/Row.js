@@ -9,12 +9,13 @@ class Row extends React.Component {
       return (
         <Cell cell={cell} key={i}
           onChange={this.props.onChange.bind(null, i)}
-          onFocus={this.props.onFocus.bind(null, i)}/>
+          onFocus={this.props.onFocus.bind(null, i)}
+          />
       )
     })
 
     return(
-      <tr className="row">
+      <tr className='row'>
         {cells}
       </tr>
     )

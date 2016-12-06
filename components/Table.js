@@ -9,13 +9,13 @@ class Table extends React.Component {
       return(
         <Row row={row} key={i}
           onChange={this.props.onChange.bind(null, i)}
-          onBlur={this.props.onBlur}
           onFocus={this.props.onFocus.bind(null, i)}
         />
       )
     })
     return(
-      <table className="table" onBlur={this.props.onBlur}>
+      <table className='table'
+        onBlur={this.props.onBlur}>
         <tbody>
           {rows}
         </tbody>
