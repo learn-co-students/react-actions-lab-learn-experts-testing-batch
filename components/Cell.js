@@ -4,10 +4,10 @@ const React = require('react');
 
 class Cell extends React.Component {
   render () {
-    const { onChange, onFocus } = this.props;
+    const { onChange, onFocus, cell } = this.props;
     return(
       <td className="cell">
-        <input value={this.props.cell} onChange={onChange} onFocus={onFocus}/>
+        <input value={cell} onChange={onChange} onFocus={onFocus}/>
       </td>
     )
   }
